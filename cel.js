@@ -24,8 +24,6 @@ var durationArr = strDuration.split(':'); // массив с временем х
 var departureArr = strdeparture.split(/[\s|,:!#]+/); //(1) нас интересуют 3 4 5
 var mountS = mountServ.split('/')[1]; //месяц
 
-
-
 ///////Создание дат
 
 var startArrival = new Date(+departureArr[2],+mountS-1,+departureArr[1],+departureArr[3]-+durationArr[0],+departureArr[4]-+durationArr[1],+departureArr[5]-+durationArr[2],0); //Время отправки
